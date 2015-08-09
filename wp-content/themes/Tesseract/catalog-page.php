@@ -37,10 +37,7 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
-
-		
-	</div><!-- #primary -->
-<?php $containers = new WP_Query(array('post_type' => 'containers'));?>
+		<?php $containers = new WP_Query(array('post_type' => 'containers'));?>
         <div class="row">
             <?php while ($containers->have_posts()): $containers->the_post(); ?> 
             <div class="col-lg-4">
@@ -48,5 +45,6 @@ get_header(); ?>
             </div>
         <?php endwhile; ?>
         </div>
-</main>
+		</main>
+	</div><!-- #primary -->
 <?php get_footer(); ?>
