@@ -42,6 +42,9 @@ get_header(); ?>
             <?php while ($containers->have_posts()): $containers->the_post(); ?> 
             <div class="col-lg-4">
                 <h4><?php the_title() ?></h4>
+                <div class="thumbnail">
+                	<?php the_post_thumbnail('thumbnail'); ?>
+                </div>
             </div>
         <?php endwhile; ?>
         </div>
