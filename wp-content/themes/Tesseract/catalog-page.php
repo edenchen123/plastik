@@ -9,8 +9,11 @@ get_header(); ?>
 
 <?php
 $category = $_GET['c'];
-$containers = new WP_Query(array('post_type' => 'containers','category' => $category)); ?>
-<h1><?php echo $_GET['c']."(".count($containers).")"; ?></h1>
+$args = array('post_type' => 'containers','category' => $category);
+$containers = new WP_Query($args); 
+echo $args[1];
+?>
+<h1><?php echo $category."(".count($containers).")"; ?></h1>
         <div class="row">
             <?php while ($containers->have_posts()): $containers->the_post(); ?> 
             <div class="col-lg-4">
