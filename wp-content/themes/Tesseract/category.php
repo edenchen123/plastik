@@ -1,18 +1,20 @@
 <?php
 /**
- * Template Name: Catalog Page
+ * Template Name: Category Page
  *
  * @package Tesseract
  */
 
 get_header(); ?>
 <?php
-$_cat_ = get_query_var('cat');
-$category = get_category ($_cat_);
-$args = array('post_type' => 'containers','category' => $_cat_);
+$cat = get_query_var('category');
+$category = get_category ($cat);
+$args = array('post_type' => 'containers','category' => $cat);
 $containers_query = new WP_query($args);
 ?>
-<h1><?php echo $category.title."(".$containers_query->found_posts.")"; ?></h1>
+<h1><?php 
+$title = single_cat_title();
+echo $title."(".$containers_query->found_posts.")"; ?></h1>
         <div class="row">
             <?php while ($containers_query->have_posts()): $containers_query->the_post(); ?>
             <div class="col-lg-4">
