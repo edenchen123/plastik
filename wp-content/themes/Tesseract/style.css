@@ -2387,6 +2387,49 @@ article.comment-body{
 
 }
 
+.list-item{
+    padding: 20px 0;
+}
+
+.list-item .list-item-thumbnail{
+    float: left;
+    width: 168px;
+    margin-right: 30px;
+    position: relative;
+}
+.list-item .list-item-thumbnail .thumb {
+    text-align: center;
+    white-space: nowrap;
+    min-height: 60px
+}
+.list-item .list-item-thumbnail .thumb img{
+     max-height: 168px;
+    max-width: 168px
+}
+.list-item .list-item-info {
+    float: left;
+    width: 364px;
+    min-height: 105px;
+    margin-right: 30px
+}
+.list-item .list-item-info .sku-title h4{
+    color: #bb0628;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 19px;  
+}
+.list-item .list-item-info .sku-model {
+    font-size: 11px
+}
+.list-page-main .list-item .list-item-info .short-description ul {
+    margin: 0;
+    padding: 0 0 0 15px
+}
+
+.list-item .list-item-info .short-description{
+    margin: 0 0 10px 0
+}
+
 
 
 
