@@ -2391,6 +2391,7 @@ article.comment-body{
     padding: 20px 0;
     width: 50%;
     float: left;
+    min-width: 490px;
 }
 
 .list-item .list-item-thumbnail{
