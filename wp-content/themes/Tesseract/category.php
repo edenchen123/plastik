@@ -31,12 +31,12 @@ echo $title."(".$containers_query->found_posts.")"; ?></h1>
                         <label>Model:</label>MGKL2LL
                     </div>
                     <div class="short-description">
-                        <li>9.7" Retina display</li>
-                        <li>Apple iOS 8.1</li>
-                        <li>64GB storage capacity</li>
-                        <li>A8X chip </li>
-                        <li>Wi-Fi</li>
-                        <li>8MP iSight camera</li>
+                        <li>15 oz</li>
+                        <li>black,white</li>
+                        <li>20 g</li>
+                        <li>150</li>
+                        <li>7x4</li>
+                        <li>Small/Medium/Large</li>
                     </div>
                 </div>
             </div>
