@@ -12,11 +12,10 @@ $category = get_category ($cat);
 $args = array('post_type' => 'containers','category' => $cat);
 $containers_query = new WP_query($args);
 ?>
-        <div id="primary" class="full-width-page">
-        <main id="main" class="site-main" role="main">
-            <h1><?php 
+<h1><?php 
 $title = single_cat_title();
 echo $title."(".$containers_query->found_posts.")"; ?></h1>
+        <div class="row">
             <?php while ($containers_query->have_posts()): $containers_query->the_post(); ?>
             <div class="list-item">
                 <div class="list-item-thumbnail">
@@ -43,7 +42,6 @@ echo $title."(".$containers_query->found_posts.")"; ?></h1>
             </div>
         <?php endwhile; ?>
         </div>
-</main><!-- #main -->
-    </div><!-- #primary -->
+
 
 <?php get_footer(); ?>
