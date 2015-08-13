@@ -25,7 +25,7 @@ echo $title."(".$containers_query->found_posts.")"; ?></h1>
                 </div>
                 <div class="list-item-info">
                     <div class="sku-title">
-                        <a href="#"><h4><?php the_title() ?></h4></a>
+                        <a href="#"><?php the_title() ?></a>
                     </div>
                     <div class="sku-model">
                         <label>Model:</label>MGKL2LL
