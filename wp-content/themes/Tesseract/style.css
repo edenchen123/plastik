@@ -1327,7 +1327,7 @@ a {
 .site-content,
 #colophon > .menu,
 #footer-banner {
-	max-width: 980px;
+	max-width: 100%;
 }
 
 .site-info,
