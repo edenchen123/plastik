@@ -2522,5 +2522,9 @@ article.comment-body{
                 }
 
 
-
+.page-template-catalog-page .site-content{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;  
+}
 
