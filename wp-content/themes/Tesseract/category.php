@@ -57,7 +57,7 @@ echo $title."(".$containers_query->found_posts.")"; ?></h2>
 						</div>
 					</div>
 				<!-- Product #1 Ends -->		
-				
+				     <?php endwhile; ?>
 				</div>
 			<!-- Products Row Ends -->
 			</div>
