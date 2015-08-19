@@ -2507,13 +2507,13 @@ article.comment-body{
                 .product-col .btn-wishlist, 
                 .product-col .btn-compare{
                     color:#fff;
-                    background:#2f353b;
+                    /*background:#2f353b;*/
                     margin-right:3px;
                 }
                 .product-col .btn-cart{
                     font-size:14px;
                     color:#fff;
-                    background:#dd0504;
+              /*      background:#dd0504;*/
                     text-transform:uppercase;
                 }
                 .product-col .btn-cart:hover{
