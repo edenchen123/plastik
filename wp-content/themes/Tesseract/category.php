@@ -6,6 +6,12 @@
  */
 
 get_header(); ?>
+<?php
+$cat = get_query_var('category');
+$category = get_category ($cat);
+$args = array('post_type' => 'containers','category' => $cat);
+$containers_query = new WP_query($args);
+?>
 <section class="products-list">			
 			<div class="container">
 			<!-- Heading Starts -->
