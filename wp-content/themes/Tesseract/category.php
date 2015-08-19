@@ -24,7 +24,7 @@ echo $title."(".$containers_query->found_posts.")"; ?></h2>
 				<div class="row">
 					<?php while ($containers_query->have_posts()): $containers_query->the_post(); ?>
 				<!-- Product #1 Starts -->
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-4 col-sm-6">
 						<div class="product-col">
 							<div class="image">
 								<img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" alt="product" class="img-responsive">
