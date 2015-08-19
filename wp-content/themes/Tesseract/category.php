@@ -30,7 +30,6 @@ echo $title."(".$containers_query->found_posts.")"; ?></h2>
 								<img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" alt="product" class="img-responsive">
 							</div>
 							<div class="caption">
-								<h4><a href="#"><?php the_title() ?></a></h4>
 								<div class="list-item-info">
 				                    <div class="sku-title">
 				                        <a href="#"><?php the_title() ?></a>
