@@ -50,11 +50,11 @@ echo $title."(".$containers_query->found_posts.")"; ?></h2>
 									<button type="button" title="" class="btn btn-wishlist" data-original-title="Wishlist">
 										<i class="fa fa-heart"></i>
 									</button>
-									<button type="button" title="" class="btn btn-compare" data-original-title="Compare">
+									<!-- <button type="button" title="" class="btn btn-compare" data-original-title="Compare">
 										<i class="fa fa-bar-chart-o"></i>
-									</button>
+									</button> -->
 									<button type="button" class="btn btn-cart">
-										Add to cart
+										View Details
 										<i class="fa fa-shopping-cart"></i> 
 									</button>									
 								</div>
