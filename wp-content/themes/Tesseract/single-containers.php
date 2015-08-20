@@ -20,7 +20,7 @@ get_header();?>
 		<div class="col-md-6">
 			<div class="list-item-info">
                 <div class="sku-title">
-                    <a href="/containers/<?php the_slug();?>"><?php the_title()?></a>
+                  <?php the_title()?>
                 </div>
                 <div class="sku-model">
                     <label>Model:</label>MGKL2LL
