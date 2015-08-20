@@ -32,7 +32,7 @@ echo $title."(".$containers_query->found_posts.")"; ?></h2>
 							<div class="caption">
 								<div class="list-item-info">
 				                    <div class="sku-title">
-				                        <a href="#"><?php the_title() ?></a>
+				                        <a href="/containers/9-round-3-compartment-container-2"><?php the_title().":".$post->post_name ?></a>
 				                    </div>
 				                    <div class="sku-model">
 				                        <label>Model:</label>MGKL2LL
