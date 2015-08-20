@@ -11,6 +11,16 @@ $cat = get_query_var('category');
 $category = get_category ($cat);
 $args = array('post_type' => 'containers','category' => $cat);
 $containers_query = new WP_query($args);
+
+
+function the_slug($echo=true){
+  $slug = basename(get_permalink());
+  do_action('before_slug', $slug);
+  $slug = apply_filters('slug_filter', $slug);
+  if( $echo ) echo $slug;
+  do_action('after_slug', $slug);
+  return $slug;
+}
 ?>
 <section class="products-list">			
 			<div class="container">
@@ -32,7 +42,7 @@ echo $title."(".$containers_query->found_posts.")"; ?></h2>
 							<div class="caption">
 								<div class="list-item-info">
 				                    <div class="sku-title">
-				                        <a href="/containers/9-round-3-compartment-container-2"><?php the_title().":".$post->post_name ?></a>
+				                        <a href="/containers/<?php the_slug();?>"><?php the_title()?></a>
 				                    </div>
 				                    <div class="sku-model">
 				                        <label>Model:</label>MGKL2LL
