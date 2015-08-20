@@ -5,27 +5,36 @@
  * @package Tesseract
  */
 
-get_header(); ?>
+?>
 
-	<div id="primary" class="full-width-page">
-		<main id="main" class="site-main" role="main">
-			<h4>asdasdasdasdas</h4>
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part( 'content', 'single' ); ?>
-
-			<?php tesseract_post_nav(); ?>
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
-
-		<?php endwhile; // end of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<div class="row">
+		<div class="col-md-6">
+			<div class="row">
+				<img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" class="img-responsive">
+			</div>
+			<div class="row">
+				<img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" class="img-responsive">
+				<img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" class="img-responsive">
+			</div>
+		</div>
+		<div class="col-md-6">
+<div class="list-item-info">
+				                    <div class="sku-title">
+				                        <a href="/containers/<?php the_slug();?>"><?php the_title()?></a>
+				                    </div>
+				                    <div class="sku-model">
+				                        <label>Model:</label>MGKL2LL
+				                    </div>
+				                    <div class="short-description">
+				                        <li>15 oz</li>
+				                        <li>black,white</li>
+				                        <li>20 g</li>
+				                        <li>150</li>
+				                        <li>7x4</li>
+				                        <li>Small/Medium/Large</li>
+				                    </div>
+                				</div>
+		</div>
+	<div>	
 
 <?php get_footer(); ?>
