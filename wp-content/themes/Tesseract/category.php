@@ -63,10 +63,12 @@ echo $title."(".$containers_query->found_posts.")"; ?></h2>
 									<!-- <button type="button" title="" class="btn btn-compare" data-original-title="Compare">
 										<i class="fa fa-bar-chart-o"></i>
 									</button> -->
+									<a href="/containers/<?php the_slug();?>">
 									<button type="button" class="btn btn-cart">
 										View Details
 										<i class="fa fa-shopping-cart"></i> 
-									</button>									
+									</button>	
+									</a>								
 								</div>
 							</div>
 						</div>
