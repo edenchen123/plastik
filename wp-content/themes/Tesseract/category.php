@@ -45,7 +45,7 @@ echo $title."(".$containers_query->found_posts.")"; ?></h2>
 				                        <a href="/containers/<?php the_slug();?>"><?php the_title()?></a>
 				                    </div>
 				                    <div class="sku-model">
-				                        <label>Model:</label>MGKL2LL
+				                        <label>Model:</label><?php echo get_post_meta( get_the_ID(), 'model' ); ?>
 				                    </div>
 				                    <div class="short-description">
 				                        <li>15 oz</li>
