@@ -47,7 +47,7 @@ echo $title."(".$containers_query->found_posts.")"; ?></h2>
 				                        <a href="/containers/<?php the_slug();?>"><?php the_title()?></a>
 				                    </div>
 				                    <div class="sku-model">
-				                        <label>Model:</label><?php the_field('model'); ?>
+				                        <label>Model:</label>&nbsp;<?php the_field('model'); ?>
 				                    </div>
 				                    <div class="short-description">
 				                        <li><?php the_field('volume'); ?>&nbsp;oz</li>

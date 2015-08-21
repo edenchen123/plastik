@@ -23,15 +23,15 @@ get_header();?>
                   <?php the_title()?>
                 </div>
                 <div class="sku-model">
-                    <label>Model:</label>MGKL2LL
+                    <label>Model:</label>&nbsp;<?php the_field('model'); ?>
                 </div>
                 <div class="short-description">
-                    <li>15 oz</li>
-                    <li>black,white</li>
-                    <li>20 g</li>
-                    <li>150</li>
-                    <li>7x4</li>
-                    <li>Small/Medium/Large</li>
+                    <li><?php the_field('volume'); ?>&nbsp;oz</li>
+                    <li><?php the_field('available_color'); ?></li>
+                    <li><?php the_field('carton_count'); ?>&nbsp;g</li>
+                    <li><?php the_field('weight'); ?> &nbsp;g</li>
+                    <!--            <li><?php the_field('model'); ?></li> -->
+                    <li><?php the_field('size'); ?></li>
                 </div>
             </div>
 		</div>
