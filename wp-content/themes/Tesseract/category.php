@@ -38,7 +38,8 @@ echo $title."(".$containers_query->found_posts.")"; ?></h2>
 						<div class="product-col">
 							<div class="image">
 								<a href="/containers/<?php the_slug();?>">
-									<img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" alt="product" class="img-responsive">
+									<!-- <img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" alt="product" class="img-responsive"> -->
+									<?php echo do_shortcode("[huge_it_portfolio id='2']"); ?>
 								</a>	
 							</div>
 							<div class="caption">
