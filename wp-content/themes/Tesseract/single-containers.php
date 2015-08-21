@@ -8,16 +8,18 @@
 get_header();?>
 
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-7">
 			<div class="row">
-				<img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" width="498" height="498">
+				<!-- <img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" width="498" height="498"> -->
+
+               <?php if ( function_exists( 'soliloquy' ) ) { soliloquy( '7-round-deep-bowl-container', 'slug' ); }?>
 			</div>
-			<div class="row">
+			<!-- <div class="row">
 				<img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" width="95" height="95">
 				<img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" width="95" height="95">
-			</div>
+			</div> -->
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-5">
 			<div class="list-item-info">
                 <div class="sku-title">
                   <?php the_title()?>
