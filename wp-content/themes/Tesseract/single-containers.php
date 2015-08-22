@@ -35,8 +35,10 @@ function the_slug($echo=true){
                     <li><?php the_field('weight'); ?> &nbsp;g</li>
                     <!--            <li><?php the_field('model'); ?></li> -->
                     <li><?php the_field('size'); ?></li>
+
                 </div>
             </div>
+            <button class="btn btn-sm btn-primary" style="margin-top:115px">Back</button>
 		</div>
 
 <?php get_footer(); ?>
