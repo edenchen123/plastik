@@ -2529,3 +2529,7 @@ article.comment-body{
     background-color: rgb(249, 249, 249);
 }
 
+.single-containers .site-content{
+    padding-top: 50px; 
+}
+
