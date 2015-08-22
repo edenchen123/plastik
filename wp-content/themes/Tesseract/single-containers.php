@@ -5,14 +5,24 @@
  * @package Tesseract
  */
 
-get_header();?>
+get_header();
+
+function the_slug($echo=true){
+  $slug = basename(get_permalink());
+  do_action('before_slug', $slug);
+  $slug = apply_filters('slug_filter', $slug);
+  if( $echo ) echo $slug;
+  do_action('after_slug', $slug);
+  return $slug;
+}
+?>
 
 	<div class="row">
 		<div class="col-md-7">
 			<div class="row">
 				<!-- <img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" width="498" height="498"> -->
 
-               <?php if ( function_exists( 'soliloquy' ) ) { soliloquy( the_slug(), 'slug' ); }?>
+               <?php if ( function_exists( 'soliloquy' ) ) { soliloquy( '7-round-deep-bowl-container', 'slug' ); }?>
 			</div>
 			<!-- <div class="row">
 				<img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" width="95" height="95">
