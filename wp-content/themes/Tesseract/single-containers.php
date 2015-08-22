@@ -12,7 +12,7 @@ get_header();?>
 			<div class="row">
 				<!-- <img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" width="498" height="498"> -->
 
-               <?php if ( function_exists( 'soliloquy' ) ) { soliloquy( '7-round-deep-bowl-container', 'slug' ); }?>
+               <?php if ( function_exists( 'soliloquy' ) ) { soliloquy( the_slug(), 'slug' ); }?>
 			</div>
 			<!-- <div class="row">
 				<img src="http://54.173.177.91/wp-content/uploads/2015/08/pl23_round.png" width="95" height="95">
