@@ -38,7 +38,7 @@ function the_slug($echo=true){
 
                 </div>
             </div>
-            <button class="btn btn-sm btn-primary" style="margin-top:115px">Back</button>
+            <button class="btn btn-sm btn-primary" style="margin-top:115px" onclick="window.history.back();">Back</button>
 		</div>
 
 <?php get_footer(); ?>
