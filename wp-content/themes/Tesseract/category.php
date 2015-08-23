@@ -50,12 +50,11 @@ echo $title."(".$containers_query->found_posts.")"; ?></h2>
 				                        <label>Model:</label>&nbsp;<?php the_field('model'); ?>
 				                    </div>
 				                    <div class="short-description">
+				                    	<li><?php the_field('available_color'); ?></li>
+				                    	<li><?php the_field('carton_count'); ?></li>
 				                        <li><?php the_field('volume'); ?>&nbsp;oz</li>
-				                        <li><?php the_field('available_color'); ?></li>
-				                        <li><?php the_field('carton_count'); ?>&nbsp;g</li>
-				                        <li><?php the_field('weight'); ?> &nbsp;g</li>
-				             <!--            <li><?php the_field('model'); ?></li> -->
-				                        <li><?php the_field('size'); ?></li>
+				                        <li><?php the_field('tiorhi'); ?></li>
+				                        <li><?php the_field('cbm'); ?></li>
 				                    </div>
                 				</div>
 								<div class="cart-button button-group">
